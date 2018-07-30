@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="pink-text flow-text">중요한 것부터 하나하나 해치우면<br> 모든 일이 쉽지 않을까?</h2>
+        <div class="row">
+            <input id="ToDo" class="col s8" type="text" placeholder="할 일" required>
+            <input id="importance" class="col s4" type="number" placeholder="중요도" required>
+        </div>
+        <button class="btn" id="btn" onclick="addTask()">추가</button>
+        <h2 class="flow-text">지금 가장 중요한 일은 <p class="pink-text" id="priority_task" style="text-decoration: underline;">없음</p>입니다.</h2>
+        <button class="btn" onclick="deleteTask()">완료되었나요?</button>
+    </div>
+</body>
+</html>
